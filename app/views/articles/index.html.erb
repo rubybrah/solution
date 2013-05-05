@@ -1,0 +1,30 @@
+<h1>Listing articles</h1>
+<% @articles.each do |article| %>
+
+  <div class="panel">
+
+    <h3><%= article.name %></h3>
+    <p class="subheader">
+      <%= truncate(article.content, :length => 250) %>
+      </br>
+    </p>
+    <%  %>
+    <%= link_to 'Read more...', article_path(article) %>
+    <% if admin_signed_in? %>
+      <ul class="button-group radius">
+        <li><%= link_to 'Show', article, class: "button" %></li>
+        <li><%= link_to 'Edit', edit_article_path(article), class: "button" %></li>
+        <li><%= link_to 'Delete', article, method: :delete,
+                                            data: { confirm: 'Are you sure?' },
+                                            class: "button" %>
+        </li>
+        <li><%= link_to 'New Article', new_article_path,
+                             class: "button success radius" %>
+        </li>
+      </ul>
+    <% end %>
+  </div>
+
+<% end %>
+
+

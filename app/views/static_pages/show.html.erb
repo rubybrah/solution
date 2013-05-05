@@ -1,0 +1,38 @@
+<% @articles.each do |article| %>
+  <article>
+    <!-- Article Title -->
+
+    <h3><%= link_to article.name, article_path(article) %></h3>
+
+    <!-- Authored Date -->
+
+    <h6>Written on <%= article.created_at.strftime("%B %d, %Y") %></h6>
+
+    <!-- Article Preview -->
+
+    <p class="articlePreview">
+      <%= truncate(article.content, :length => 275) %>
+    </p>
+    <ul class="inline-list">
+      <li>Tags:</li><br>
+      <% article.tag_list.each do |t| %>
+      <li>
+        <span class="secondary label">
+          <%= link_to t, tag_path(t).html_safe %>
+        </span>
+      </li>
+      <% end %>
+    </ul>
+
+    <!--ul class="inline-list">
+      <li>Tags:
+        <span class="secondary label">
+          <%= article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ').html_safe %>
+        </span>
+      </li>
+    </ul-->
+    </br>
+    <%= link_to 'Read more...', article_path(article) %>
+  </article>
+  <hr>
+<% end %>

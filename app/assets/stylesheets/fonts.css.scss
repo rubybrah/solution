@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'proximanova-bold';
+  src: url(font-path('proximanova-bold-webfont.eot') + "?#iefix") format('embedded-opentype'),
+       url(font-path('proximanova-bold-webfont.woff')) format('woff'),
+       url(font-path('proximanova-bold-webfont.ttf'))  format('truetype'),
+       url(font-path('proximanova-bold-webfont.svg') + "#proximanova-bold") format('svg');
+}
+
+@font-face {
+  font-family: 'proximanova-extrabold';
+  src: url(font-path('proximanova-extrabold-webfont.eot') + "?#iefix") format('embedded-opentype'),
+       url(font-path('proximanova-extrabold-webfont.woff')) format('woff'),
+       url(font-path('proximanova-extrabold-webfont.ttf'))  format('truetype'),
+       url(font-path('proximanova-extrabold-webfont.svg') + "#proximanova-extrabold") format('svg');
+}
+
+@font-face {
+  font-family: 'proximanova-light';
+  src: url(font-path('proximanova-light-webfont.eot') + "?#iefix") format('embedded-opentype'),
+       url(font-path('proximanova-light-webfont.woff')) format('woff'),
+       url(font-path('proximanova-light-webfont.ttf'))  format('truetype'),
+       url(font-path('proximanova-light-webfont.svg') + "#proximanova-light") format('svg');
+}
+
+@font-face {
+  font-family: 'proximanova-regular';
+  src: url(font-path('proximanova-regular-webfont.eot') + "?#iefix") format('embedded-opentype'),
+       url(font-path('proximanova-regular-webfont.woff')) format('woff'),
+       url(font-path('proximanova-regular-webfont.ttf'))  format('truetype'),
+       url(font-path('proximanova-regular-webfont.svg') + "#proximanova-regular") format('svg');
+}
+
+@font-face {
+  font-family: 'proximanovacond-semibold';
+  src: url(font-path('proximanovacond-semibold-webfont.eot') + "?#iefix") format('embedded-opentype'),
+       url(font-path('proximanovacond-semibold-webfont.woff')) format('woff'),
+       url(font-path('proximanovacond-semibold-webfont.ttf'))  format('truetype'),
+       url(font-path('proximanovacond-semibold-webfont.svg') + "#proximanovacond-semibold") format('svg');
+}
+
+@font-face {
+  font-family: 'proximanovacond-light';
+  src: url(font-path('proximanovacond-light-webfont.eot') + "?#iefix") format('embedded-opentype'),
+       url(font-path('proximanovacond-light-webfont.woff')) format('woff'),
+       url(font-path('proximanovacond-light-webfont.ttf'))  format('truetype'),
+       url(font-path('proximanovacond-light-webfont.svg') + "#proximanovacond-light") format('svg');
+}

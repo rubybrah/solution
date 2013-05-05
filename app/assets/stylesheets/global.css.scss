@@ -1,0 +1,33 @@
+.large {
+  font-size: 10em;
+}
+
+.container {
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.logo-image {
+  margin: 2px 0 2px 0;
+}
+
+.top-bar {
+  .name {
+    margin: 0 0 0 15px;
+    cursor: pointer;
+  }
+}
+
+.container-img {
+  margin: -30px -30px;
+  opacity: 0.6;
+}
+
+.label {
+  .inverse-inline-link {
+    color: white !important;
+  }
+}
