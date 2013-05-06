@@ -123,6 +123,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  bcrypt-ruby (~> 3.0.0)
   bullet
   coffee-rails (~> 3.2.1)
   devise
