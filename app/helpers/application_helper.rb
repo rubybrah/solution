@@ -4,7 +4,6 @@ module ApplicationHelper
         :autolink => true, :space_after_headers => true)
     markdown.render(text).html_safe
   end
-
   # <div class="alert-box [success alert secondary]">
   #   This is an alert box.
   #   <a href="" class="close">&times;</a>
@@ -20,7 +19,7 @@ module ApplicationHelper
 
     flash.inject "" do |message, (key, value)|
       message += content_tag :div, :data => { :alert => "" }, :class => "alert-box #{key_matching[key] || :standard}" do
-        (value + link_to("&times;".html_safe, "", :class => :close)).html_safe
+        (value + link_to("&times;".html_safe, "#", :class => :close)).html_safe
       end
     end.html_safe
   end
