@@ -1,9 +1,3 @@
-PATH
-  remote: /usr/local/rvm/gems/ruby-1.9.3-p392/gems/custom-zurb-foundation-4.1.2
-  specs:
-    zurb-foundation (4.1.2)
-      sass (>= 3.2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,8 +28,8 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
-    acts-as-taggable-on (2.3.3)
-      rails (~> 3.0)
+    acts-as-taggable-on (2.4.1)
+      rails (>= 3, < 5)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
@@ -48,7 +42,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    devise (2.2.3)
+    devise (2.2.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
@@ -68,7 +62,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
-    multi_json (1.7.2)
+    multi_json (1.7.3)
     orm_adapter (0.4.0)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -97,7 +91,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
-    redcarpet (2.1.0)
+    redcarpet (2.2.2)
     sass (3.2.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -110,17 +104,19 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.7)
     thor (0.18.1)
-    tilt (1.3.7)
+    tilt (1.4.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uglifier (2.0.1)
+    uglifier (2.1.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     uniform_notifier (1.2.0)
     warden (1.2.1)
       rack (>= 1.0)
+    zurb-foundation (4.0.9)
+      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -138,4 +134,4 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
-  zurb-foundation!
+  zurb-foundation (~> 4.0.9)

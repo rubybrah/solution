@@ -32,7 +32,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'zurb-foundation', :path => '/usr/local/rvm/gems/ruby-1.9.3-p392/gems/custom-zurb-foundation-4.1.2'
+gem 'zurb-foundation', '~> 4.0.9'
 gem 'devise'
 gem 'redcarpet'
 gem 'acts-as-taggable-on'
