@@ -1,11 +1,15 @@
 JamesPortfolio::Application.routes.draw do
-devise_for :admins
 
-get 'tags/:tag', to: 'static_pages#show', as: :tag
+  devise_for :admins
 
-resources :articles
-match 'social' => 'static_pages#social'
-root :to => 'static_pages#index'
+  get 'tags/:tag', to: 'static_pages#show', as: :tag
+
+  resources :articles
+
+  match 'work' => 'static_pages#work'
+  match 'social' => 'static_pages#social'
+
+  root :to => 'static_pages#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

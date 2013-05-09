@@ -1,5 +1,16 @@
 <div class="panel">
-  <h5>Featured</h5>
-  <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-  <a href="#">Read More &rarr;</a>
+  <h5>Featured Article</h5>
+  <h6 class="subheader">
+    <%= link_to @article.name, article_path(@article) %>
+  </h6>
+  <p><%= truncate(@article.content, :length => 150) %></p>
+</div>
+
+<div class="panel">
+  <h5>Sponsor</h5>
+  <a href="http://www.pandodev.com">
+    <%= image_tag 'Pando_Tree_v1.png', alt: 'Pando development logo', width: 235, height: 235 %>
+    <h6 class="subheader text-center">PANDO WEB DEVELOPMENT
+  </a>
+  </h6>
 </div>

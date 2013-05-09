@@ -1,9 +1,10 @@
-<h1>Listing articles</h1>
+<h1>My mindless ramblings*</h1>
+
 <% @articles.each do |article| %>
 
   <div class="panel">
 
-    <h3><%= article.name %></h3>
+    <h3><%= link_to article.name, article_path(article) %></h3>
     <p class="subheader">
       <%= truncate(article.content, :length => 250) %>
       </br>
@@ -13,10 +14,10 @@
     <% if admin_signed_in? %>
       <ul class="button-group radius">
         <li><%= link_to 'Show', article, class: "button" %></li>
-        <li><%= link_to 'Edit', edit_article_path(article), class: "button" %></li>
+        <li><%= link_to 'Edit', edit_article_path(article), class: "button secondary" %></li>
         <li><%= link_to 'Delete', article, method: :delete,
                                             data: { confirm: 'Are you sure?' },
-                                            class: "button" %>
+                                            class: "button alert" %>
         </li>
         <li><%= link_to 'New Article', new_article_path,
                              class: "button success radius" %>
@@ -26,5 +27,7 @@
   </div>
 
 <% end %>
+
+<small>*Please do not judge the content of my character based upon my writing or writing style. I write in order to get better at writing. Hopefully my writing will improve over time, and this is my way of keeping a record of that progress. Thank you for your understanding.</small>
 
 

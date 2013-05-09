@@ -1,3 +1,17 @@
+body {
+  background-image: url(/assets/bg.jpg);
+}
+
+footer {
+  background: #fff;
+}
+
+::selection {
+  background: rgba(242, 87, 33, 0.7);
+  color: #fff;
+  opacity: 0.5;
+}
+
 .large {
   font-size: 10em;
 }
@@ -16,8 +30,11 @@
 
 .top-bar {
   .name {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 30px;
     cursor: pointer;
+  }
+  .empty-button {
+    padding: 0 45px;
   }
 }
 

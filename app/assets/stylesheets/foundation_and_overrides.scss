@@ -192,14 +192,14 @@ $hr-margin: emCalc(15px);
 // $label-font-size: emCalc(14px);
 // $label-font-weight: 500;
 // $label-font-color: lighten(#000, 30%);
-// $label-bottom-margin: emCalc(3px);
+$label-bottom-margin: emCalc(10px);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: emCalc(14px);
 // $input-bg-color: #fff;
-// $input-focus-bg-color: darken(#fff, 2%);
-// $input-border-color: darken(#fff, 20%);
-// $input-focus-border-color: darken(#fff, 40%);
+$input-focus-bg-color: darken(#fff, 1%);
+$input-border-color: darken(#fff, 10%);
+$input-focus-border-color: lighten($primary-color, 35%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
@@ -410,13 +410,13 @@ $hr-margin: emCalc(15px);
 //
 
 // We use these to set the background colors for parts of Clearing.
-// $clearing-bg: #111;
+$clearing-bg: #fff;
 // $clearing-caption-bg: $clearing-bg;
 // $clearing-carousel-bg: #111;
 // $clearing-img-bg: $clearing-bg;
 
 // We use these to style the close button
-// $clearing-close-color: #fff;
+$clearing-close-color: $primary-color;
 // $clearing-close-size: 40px;
 
 // We use these to style the arrows
@@ -429,9 +429,9 @@ $hr-margin: emCalc(15px);
 
 // We use these to make the image and carousel height and style
 // $clearing-active-img-height: 75%;
-// $clearing-carousel-height: 150px;
-// $clearing-carousel-thumb-width: 175px;
-// $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255);
+//$clearing-carousel-height: 150px;
+$clearing-carousel-thumb-width: 185px;
+$clearing-carousel-thumb-active-border: 4px solid $primary-color;
 
 //
 // Custom Form Variables
@@ -938,15 +938,15 @@ $hr-margin: emCalc(15px);
 //
 
 // We use these to control border styles
-// $thumb-border-style: solid;
-// $thumb-border-width: 4px;
-// $thumb-border-color: #fff;
-// $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
-// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+$thumb-border-style: solid;
+$thumb-border-width: 4px;
+$thumb-border-color: #fff;
+$thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
+$thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
 
 // Radius and transition speed for thumbs
-// $thumb-radius: $global-radius;
-// $thumb-transition-speed: 200ms;
+$thumb-radius: $global-radius;
+$thumb-transition-speed: 200ms;
 
 //
 // Tooltip Variables
