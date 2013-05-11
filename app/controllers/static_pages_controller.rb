@@ -14,10 +14,10 @@ class StaticPagesController < ApplicationController
   end
 
   def social
-    # static_page
+
   end
 
   def work
-    # static_page
+
   end
 end

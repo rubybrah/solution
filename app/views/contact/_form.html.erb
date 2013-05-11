@@ -1,0 +1,50 @@
+<%= form_for @contact do |f| %>
+  <% if @contact.errors.any? %>
+    <h2>
+      <%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:
+    </h2>
+
+    <ul>
+    <% @contact.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  <% end %>
+<div class="row collapse">
+  <div class="large-2 columns">
+    <%= f.label :name, :class => 'inline' %>
+  </div>
+  <div class="large-10 columns">
+    <%= f.text_field :name, :placeholder => 'Kenny Powers' %>
+  </div>
+</div>
+<div class="row collapse">
+  <div class="large-2 columns">
+    <%= f.label :subject %>
+  </div>
+  <div class="large-10 columns">
+    <%= f.text_field :subject %>
+  </div>
+</div>
+<div class="row collapse">
+  <div class="large-2 columns">
+    <%= f.label :email %>
+  </div>
+  <div class="large-10 columns">
+    <%= f.text_field :email, :placeholder => 'kennypowers@example.com' %>
+  </div>
+</div>
+<div class="row collapse">
+  <div class="large-2 columns">
+    <%= f.label :message %>
+  </div>
+  <div class="large-10 columns">
+    <%= f.text_area :message %>
+  </div>
+</div>
+<div class="row collapse">
+  <div class="large-2 columns end">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>

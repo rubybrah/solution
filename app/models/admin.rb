@@ -4,4 +4,5 @@ class Admin < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :timeoutable
 
+  attr_accessible :email, :password, :password_confirmation
 end

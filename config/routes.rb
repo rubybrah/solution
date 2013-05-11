@@ -5,6 +5,7 @@ JamesPortfolio::Application.routes.draw do
   get 'tags/:tag', to: 'static_pages#show', as: :tag
 
   resources :articles
+  match 'contact' => 'contact#new'
 
   match 'work' => 'static_pages#work'
   match 'social' => 'static_pages#social'
